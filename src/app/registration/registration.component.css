@@ -1,0 +1,62 @@
+.registrar-page {
+  width: 70%;
+  margin-top: 10px;
+  background-color: #d0e6f1;
+}
+
+.header-div {
+  height: 80%;
+  width: 100%;
+  padding: 2%;
+  margin: 5px;
+  font-size: 35px;
+  text-align: center;
+  color: white;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  letter-spacing: 8pt;
+  background-color: #337ab7;
+}
+
+.registration-form {
+  padding: 1%;
+}
+
+.registration-form-headaer {
+  font-size: 30px;
+}
+
+table, ul, h5 {
+  width: 70%;
+  margin: auto;
+}
+
+.pop-up{
+    /* fixed position  gives us pop-up */
+    
+    top:20%;
+    left: 45%;
+    width: 30%;
+    padding: 10px;
+}
+
+.card-header{
+    background-color: red;
+}
+
+.chat-box {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 25%;
+    height: 50%;
+}
+
+.chatbox-header {
+  background-color: #337ab7;
+  color: white;
+  font-size: 16px;
+}
+
+.input-text {
+  width: 88%;
+}
