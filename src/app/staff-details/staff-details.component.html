@@ -1,0 +1,44 @@
+<div>
+    <div class="card mt-5">
+        <div class="card-header"></div>
+        <div class="card-body">
+                <table class="table table-bordered table-striped">
+                    <thead class="table=primary">
+                        <tr>
+                            <th>ID</th>
+                            <th>NAME</th>
+                            <th>Departement</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor = "let x of this.staffGroup2">
+                            <td>{{x.id}}</td>
+                            <td>{{x.name}}</td>
+                            <td>{{x.department}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+       
+        <div class="card-footer"></div>
+    </div>
+
+    <!-- <div class="card mt-5">
+        <div class="card-header"></div>
+        <div class="card-body">
+            <div>ID: {{staffDetails['id']}}</div>
+            <div>Name: {{staffDetails['name']}}</div>
+            <div>Dept: {{staffDetails['department']}}</div>
+        </div>
+        <div class="card-footer"></div>
+    </div> -->
+
+    <!-- <div class="card mt-5">
+        <div class="card-header"></div>
+        <div class="card-body">
+            <div>ID: {{staffDetails.id}}</div>
+            <div>Name</div>
+            <div>Dept</div>
+        </div>
+        <div class="card-footer"></div>
+    </div> -->
+</div>
