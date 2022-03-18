@@ -1,0 +1,79 @@
+<div class="mt-5 timesheet-layout">
+    <div class="table table-bordered table-striped">
+        <div class="row font-bold header">
+            <div class="col-1">Department</div>
+            <div class="col-1">WP</div>
+            <div class="col-1">Total</div>
+            <div class="col-1"> Mon</div>
+            <div class="col-1"> Tue</div>
+            <div class="col-1">Wed</div>
+            <div class="col-1">Thursday</div>
+            <div class="col-1">Friday</div>
+            <div class="col-1">Saturday</div>
+            <div class="col-1">Sunday</div>
+            <div class="col-1">Notes</div>
+            <div class="col-1"></div>
+            <div></div>
+        </div>
+
+        <div>
+            <div class="row font-bold" *ngFor="let timesheetitem of timesheetitems">
+                <div class="col-1">
+                    <input class="form-control" type="text" [value]="timesheetitem.department">
+                </div>
+
+                <div class="col-1">
+                    <input class="form-control" type="text" [value]="timesheetitem.wp">
+                </div>
+
+                <div class="col-1">Total</div>
+
+                <div class="col-1">
+                    <input class="form-control" type="text" [value]="timesheetitem.monday">
+                </div>
+
+                <div class="col-1">
+                    <input class="form-control" type="text" [value]="timesheetitem.tuesday">
+                </div>
+
+                <div class="col-1">
+                    <input class="form-control" type="text" [value]="timesheetitem.wednesday">
+                </div>
+
+                <div class="col-1">
+                    <input class="form-control" type="text" [value]="timesheetitem.thursday">
+                </div>
+
+                <div class="col-1">
+                    <input class="form-control" type="text" [value]="timesheetitem.friday">
+                </div>
+
+                <div class="col-1">
+                    <input class="form-control" type="text" [value]="timesheetitem.saturday">
+                </div>
+
+                <div class="col-1">
+                    <input class="form-control" type="text" [value]="timesheetitem.sunday">
+                </div>
+
+                <div class="col-1">
+                    <input class="form-control" type="text" [value]="timesheetitem.notes">
+                </div>
+
+                <div class="col-1">
+                    <input type="button" class="btn btn-primary" value="Delete" (click)="deleteTimeSheetItem()">
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <div class="row">
+                <div class="col-11"></div>
+                <div class="col-1">
+                    <input type="button" [ngClass]="btnClass" [value]="addBtnValue" (click)="addTimeSheetItem()">
+                    &nbsp;
+                    <input type="button" [ngClass]="btnSaveClass" [value]="saveBtnValue">
+                </div>
+            </div>
+        </div>
+    </div>

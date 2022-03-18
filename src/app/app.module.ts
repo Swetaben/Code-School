@@ -8,12 +8,14 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { RegistrationComponent } from './registration/registration.component';
 import { StaffDetailsComponent } from './staff-details/staff-details.component';
+import { TimesheetComponent } from './timesheet/timesheet.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     RegistrationComponent,
-    StaffDetailsComponent
+    StaffDetailsComponent,
+    TimesheetComponent
   ],
   imports: [
     BrowserModule,
