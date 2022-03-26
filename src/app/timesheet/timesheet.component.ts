@@ -24,6 +24,9 @@ export class TimesheetComponent implements OnInit {
   btnSaveClass: string = "btn btn-success";
   addBtnValue: string = "Add";
   saveBtnValue: string = "Save";
+  // firstString: string = " TRUck";
+  // todayDate: Date = new Date();
+  // myCurrency: number = 2243;
   constructor() { }
 
   ngOnInit(): void {
